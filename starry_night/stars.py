@@ -11,8 +11,9 @@ def closeout():
     canvas.onclick(None)
 
 
-scale_factor=50
-star_count=100
+scale_factor=80
+star_count=1000
+turtle.speed(0)
 canvas = turtle.Screen()
 canvas.title("Stars in the sky")
 canvas.bgcolor("black")
@@ -29,7 +30,7 @@ for x in range(0,star_count):
 for one_star in star_list:
     one_star.draw_star(canvas)
 
-canvas.onkey(closeout)
+canvas.onkey(closeout,"x")
 canvas.mainloop()
 
 
