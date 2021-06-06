@@ -6,8 +6,10 @@ class star():
     y=0
         
     def __init__(self,screen_width,screen_height):
-        self.x = random.randint(0,screen_width)
-        self.y = random.randint(0,screen_height)
+        foo=int(screen_width/2)
+        bar=int(screen_height/2)
+        self.x = random.randint(-1*foo,foo)
+        self.y = random.randint(-1*bar,bar)
         self.size = random.randint(3,10)
         
 
